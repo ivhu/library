@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#form-container {
+    display: none;
+}
+
+#btns {
+    display: none;
+}
+
+body {
+    margin: 20px 200px;
+    height: 100vh;
+    font-size: 20px;
+
+}
+
+.library {
+    font-size: 80px;
+    font-weight: 900;
+    padding-bottom: 50px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    min-height: 50%;
+}
+
+button {
+    border: none;
+    padding: 8px;
+    width: 40%;
+    background-color: #60a5fa;
+    color: #f8fafc;
+    box-shadow: 2px 2px 2px lightgray;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+button:hover {
+    filter: brightness(.95);
+}
+
+button:active {
+    box-shadow: 1.5px 1.5px 2px lightgray;;
+}
+
+#new-book {
+    padding: 12px;
+    font-size: 30px;
+    width: 300px;
+}
+
+.status, .remove {
+    width: 100%;
+}
+
+
+#form-container {
+    /* display: flex; */
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+}
+
+#form {
+    /* display: grid; */
+    grid-template-columns: 1fr 4fr;
+    justify-items: left;
+    align-items: center;
+    gap: 10px;
+}
+
+input {
+    padding: 8px;
+    background-color: #e2e8f0;
+    border: none;
+    border-radius: 5px;
+    width: 90%;
+}
+
+input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+}
+
+#btns {
+    /* display: flex; */
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+td {
+    padding: 5px;
+}
+
+th {
+    padding: 20px;
+    background-color: #fef9c3;
+}
+
